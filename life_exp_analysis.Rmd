@@ -15,18 +15,6 @@ library(gapminder)
 
 Examining life expectancy plot 
 
-# Life Expectancy Analysis  
-
-```{r}
-data("gapminder_unfiltered")
-
-gapminder_unfiltered %>%
-  group_by(year)%>%
-  summarize(max(lifeExp)) %>%
-  arrange(desc(lifeExp))
-
-```
-
 #Life Expectancy Analysis 
 
 ```{r}
