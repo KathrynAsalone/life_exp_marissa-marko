@@ -17,6 +17,8 @@ Examining life expectancy plot
 
 #Life Expectancy Analysis 
 
+First, clean the data
+
 ```{r}
 data("gapminder_unfiltered")
 gapminder_unfiltered %>%
@@ -27,3 +29,4 @@ gapminder_unfiltered %>%
   sumdat
 ```
 
+Next, recreate the plot from Oeppen and Vaupel (2002)
