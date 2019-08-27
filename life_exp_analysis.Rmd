@@ -1,0 +1,29 @@
+---
+title: "Examine Life Expectancy"
+author: "Marissa Marko"
+date: "`r Sys.Date()"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(gapminder)
+```
+
+# Abstract 
+
+Examining life expectancy plot 
+
+# Life Expectancy Analysis  
+
+```{r}
+gapminder
+
+gapminder %>%
+  group_by(country, year)%>%
+  summarize(lifeExp) %>%
+  arrange(desc(lifeExp))
+
+```
+
